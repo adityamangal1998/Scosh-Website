@@ -1,0 +1,85 @@
+<html>
+<head>
+<script language="javascript">
+ScrollRate = 70;
+
+function scrollDiv_init() {
+	DivElmnt = document.getElementById('MyDivName');
+	ReachedMaxScroll = false;
+	
+	DivElmnt.scrollTop = 0;
+	PreviousScrollTop  = 0;
+	
+	ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+}
+
+function scrollDiv() {
+	
+	if (!ReachedMaxScroll) {
+		DivElmnt.scrollTop = PreviousScrollTop;
+		PreviousScrollTop+=2;
+		
+		ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+	}
+	else {
+		ReachedMaxScroll = (DivElmnt.scrollTop == 0)?false:true;
+		
+		DivElmnt.scrollTop = PreviousScrollTop;
+		PreviousScrollTop-=2;
+	}
+}
+
+function pauseDiv() {
+	clearInterval(ScrollInterval);
+}
+
+function resumeDiv() {
+	PreviousScrollTop = DivElmnt.scrollTop;
+	ScrollInterval    = setInterval('scrollDiv()', ScrollRate);
+}
+</script>
+<style>
+#MyDivName {
+  background-color: lightblue;
+  width: 150px;
+  height: 200px;
+  overflow: auto;
+  margin-left:1000px;
+   border-radius: 5px;
+   scroll:smooth;
+   padding:5px 5px 5px 5px;
+
+}
+#MyDivName::-webkit-scrollbar {
+display: none;
+}
+</style>
+</head>
+<body onLoad="scrollDiv_init()">
+<div id="MyDivName" style="overflow:auto;width:200px;height:100px" onMouseOver="pauseDiv()" onMouseOut="resumeDiv()">
+hello my name is adita mangal
+i am self-confident boy
+make your dream true with open eyes
+i like to learn new kits
+playing chess
+<a href="http://facebook.com" target="_blank" >Facebook</a>
+hello my name is adita mangal
+i am self-confident boy
+make your dream true with open eyes
+i like to learn new kits
+playing chess
+<a href="http://facebook.com" target="_blank" >Facebook</a>
+hello my name is adita mangal
+i am self-confident boy
+make your dream true with open eyes
+i like to learn new kits
+<a href="http://facebook.com" target="_blank" >Facebook</a>
+playing chess
+hello my name is adita mangal
+i am self-confident boy
+make your dream true with open eyes
+i like to learn new kits
+playing chess
+</div>
+</body>
+</html>
