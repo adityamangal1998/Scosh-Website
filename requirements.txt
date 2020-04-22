@@ -12,7 +12,6 @@ backports.weakref==1.0rc1
 bcrypt==3.1.7
 beautifulsoup4==4.8.2
 bitstring==3.1.6
-bleach==1.5.0
 blessings==1.7
 blinker==1.4
 blis==0.4.1
@@ -176,7 +175,6 @@ parso==0.5.2
 pefile==2019.4.18
 pickleshare==0.7.5
 pika==0.12.0
-Pillow==6.2.1
 Pint==0.11
 plac==0.9.6
 playsound==1.2.2
@@ -202,7 +200,6 @@ pygame==1.9.6
 PyGetWindow==0.0.8
 Pygments==2.5.2
 PyHamcrest==1.10.1
-PyInstaller==3.5
 PyJWT==1.7.1
 pykwalify==1.7.0
 pymongo==3.7.2
@@ -273,9 +270,7 @@ tableschema==1.15.0
 tabulate==0.8.6
 tabulator==1.38.1
 tensorboard==2.0.2
-tensorflow==2.0.0
 tensorflow-estimator==2.0.1
-tensorflow-gpu==2.0.0
 tensorflow-tensorboard==1.5.1
 termcolor==1.1.0
 terminado==0.8.3
@@ -288,7 +283,6 @@ tornado==6.0.3
 tqdm==4.29.1
 traitlets==4.3.3
 twilio==6.35.2
-Twisted==19.10.0
 typing==3.6.6
 tzlocal==2.0.0
 ujson==1.35
