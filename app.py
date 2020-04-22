@@ -29,5 +29,5 @@ def stat():
     return render_template("static.html")
 
 
-
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
